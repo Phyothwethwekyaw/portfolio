@@ -47,6 +47,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: '#about', label: 'About' },
+    { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
@@ -93,7 +94,7 @@ const Navbar = () => {
             </svg>
           </span>
           <h1 className="text-2xl font-bold">
-            <span className="text-[#FFD700]">Yang</span>
+            {/* <span className="text-[#FFD700]">Yang</span> */}
             <span className="text-[#F8F8F8]">Julie</span>
           </h1>
         </a>

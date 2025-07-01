@@ -74,6 +74,30 @@ export default function HomePage() {
 
       <Separator />
 
+      {/* Skills Section */}
+      <section id="skills" className="py-8 md:py-16">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFD700] text-left">Skills</h2>
+        <div className="flex flex-wrap text-left gap-4">
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">HTML</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">CSS</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">JavaScript</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">React</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Next.js</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Tailwind CSS</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Git</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Python</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Power BI</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">SQL</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Figma</span>
+          <span className="px-4 py-2 rounded-lg bg-[#232736] text-[#F8F8F8] font-medium">Rapid Miner</span>
+          
+
+          
+          {/* Add more skills as needed */}
+        </div>
+      </section>
+      <Separator />
+
       {/* Projects Section */}
       <section id="projects" className="py-8 md:py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#FFD700]">Featured Projects</h2>
