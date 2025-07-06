@@ -41,11 +41,11 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="text-gray-700 dark:text-[#CCCCCC] mb-4 max-w-xl">
-            I am a passionate ICT student and aspiring frontend developer based in Thailand. Specializing in React, Next.js, and modern JavaScript frameworks, I create clean, responsive, and user-friendly web applications. Available for remote work opportunities worldwide while based in Thailand.
+            I am a final-year ICT student and passionate frontend developer based in Thailand, actively seeking internship opportunities. Specializing in React, Next.js, and modern JavaScript frameworks, I create clean, responsive, and user-friendly web applications. Available for internships and work opportunities worldwide.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-6">
             <a
-              href="/PhyoThweThweKyaw_CV.pdf"
+              href="/PhyoThweThweKyaw (1).pdf"
               download
               className="flex items-center gap-2 px-6 py-2 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300 font-semibold"
             >

@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="text-amber-600 dark:text-[#FFD700]">Julie</span>
             </h2>
             <p className="text-gray-700 dark:text-[#CCCCCC] mb-4">
-              Building digital experiences with passion and purpose
+              Crafting modern web solutions with React and Next.js
             </p>
             <p className="text-sm text-gray-600 dark:text-[#AAAAAA]">
               Based in Thailand 🇹🇭

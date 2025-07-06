@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "Personal Portfolio Website - Frontend Developer Showcase",
+    title: "Personal Portfolio Website",
     description:
       "A modern, responsive portfolio website built with Next.js 15 and Tailwind CSS, showcasing frontend development skills. Features smooth animations, optimized performance, and mobile-first design. Perfect example of React-based portfolio development.",
     image: "/portfolio.png",
@@ -14,7 +14,7 @@ export const projects = [
     id: 2,
     title: "Adore Flowers - Responsive Plant Website",
     description:
-      "A beautiful, responsive plant and flower website built with HTML and Tailwind CSS. Features elegant design, mobile optimization, and smooth user experience. Demonstrates proficiency in CSS frameworks and responsive web design principles.",
+      "An elegant plant e-commerce platform featuring a curated collection of organic plants with detailed species information and pricing. Includes customer testimonials, a 30-day trial offer, and comprehensive service highlights like fast delivery and affordable pricing. The site emphasizes environmental benefits and sustainable gardening practices.",
     image: "/flowerweb.png",
     tags: ["HTML", "Tailwind CSS", "Responsive Design", "CSS Animation"],
     liveUrl: "https://adoreflower.netlify.app/",
@@ -25,7 +25,7 @@ export const projects = [
     id: 3,
     title: "Tailwaggers - Pet Adoption Platform",
     description:
-      "A modern, responsive web application designed to streamline the pet adoption process and connect animals with loving homes. Built with HTML and Tailwind CSS, featuring intuitive navigation, mobile optimization, and user-friendly interface design.",
+      "A heartwarming pet adoption platform that showcases available dogs and cats with detailed profiles including breed and age information. Features success stories from families who found their perfect companions, streamlined adoption workflows, and multiple contact channels to connect potential pet owners with their future best friends.",
     image: "/pet.png",
     tags: ["HTML", "Tailwind CSS", "Responsive Design", "UI/UX Design"],
     liveUrl: "https://tailwaggers-pet-adoption.vercel.app",
@@ -36,11 +36,11 @@ export const projects = [
     id: 4,
     title: "RIC Gaming ChatBot",
     description:
-      "A modern e-commerce platform for gaming products built with Next.js and modern web technologies. Features shopping cart functionality, user authentication, payment integration with Stripe, and PostgreSQL database. Demonstrates full-stack development capabilities.",
+      "An interactive gaming community hub serving 7+ active members across 3+ game types with 24/7 support. Features an integrated chatbot for real-time assistance, comprehensive FAQ system, member feedback collection, and multiple social connectivity options including Facebook and Line integration to foster gaming excellence at RIC.",
     image: "/ric_gaming.png",
-    tags: ["Html", "CSS", "Javascript", "Gemini AI"],
-    liveUrl: "",
-    githubUrl: "https://github.com/Phyothwethwekyaw",
+    tags: ["Html", "CSS", "Javascript", "Excel"],
+    liveUrl: "https://ric-gaming-club-faq.vercel.app/pages/home/index.html",
+    githubUrl: "https://github.com/henryIsHim/ric-gaming-club-faq.git",
     status: "Complete",
   },
 ];
