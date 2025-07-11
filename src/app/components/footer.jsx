@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="mailto:phyothwethwekyaw404@gmail.com"
-                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-amber-600 dark:hover:bg-[#6F42C1] hover:text-white dark:hover:text-[#F8F8F8] transition-all duration-300"
+                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-amber-600 dark:hover:bg-amber-600 hover:text-white dark:hover:text-white transition-all duration-300"
                 aria-label="Email"
               >
                 <FaEnvelope className="w-5 h-5" />
@@ -52,7 +52,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/phyothwethwekyaw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-amber-600 dark:hover:bg-[#6F42C1] hover:text-white dark:hover:text-[#F8F8F8] transition-all duration-300"
+                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-5 h-5" />
@@ -61,7 +61,7 @@ export default function Footer() {
                 href="https://github.com/Phyothwethwekyaw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-amber-600 dark:hover:bg-[#6F42C1] hover:text-white dark:hover:text-[#F8F8F8] transition-all duration-300"
+                className="bg-gray-200 dark:bg-[#2C2F48] p-3 rounded-full text-amber-600 dark:text-[#FFD700] hover:bg-gray-700 dark:hover:bg-gray-700 hover:text-white dark:hover:text-white transition-all duration-300"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-5 h-5" />
