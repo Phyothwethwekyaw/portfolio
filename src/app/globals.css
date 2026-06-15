@@ -40,6 +40,20 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Stripe-inspired semantic palette — light */
+    --surface: 255 255 255;
+    --surface-subtle: 246 249 252;
+    --surface-muted: 239 243 246;
+    --ink: 10 37 64;
+    --ink-muted: 66 84 102;
+    --ink-subtle: 105 115 134;
+    --line: 227 232 238;
+    --line-strong: 207 215 223;
+    --brand: 99 91 255;
+    --brand-hover: 79 70 229;
+    --shadow-soft: 0 1px 2px rgba(10, 37, 64, 0.06), 0 4px 12px rgba(10, 37, 64, 0.04);
+    --shadow-elevated: 0 4px 12px rgba(10, 37, 64, 0.08), 0 16px 32px rgba(10, 37, 64, 0.06);
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -66,6 +80,8 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+
   }
 }
 

@@ -8,7 +8,6 @@ export const projects = [
     tags: ["Next.js", "React", "Tailwind CSS", "Responsive Design"],
     liveUrl: "https://phyothwethwekyaw-portfolio.vercel.app",
     githubUrl: "https://github.com/Phyothwethwekyaw/portfolio",
-    status: "Complete",
   },
   {
     id: 2,
@@ -19,7 +18,6 @@ export const projects = [
     tags: ["HTML", "Tailwind CSS", "Responsive Design", "CSS Animation"],
     liveUrl: "https://adoreflower.netlify.app/",
     githubUrl: "https://github.com/Phyothwethwekyaw/plant_website",
-    status: "Complete",
   },
   {
     id: 3,
@@ -30,7 +28,6 @@ export const projects = [
     tags: ["HTML", "Tailwind CSS", "Responsive Design", "UI/UX Design"],
     liveUrl: "https://tailwaggers-pet-adoption.vercel.app",
     githubUrl: "https://github.com/Phyothwethwekyaw/pet_adoption",
-    status: "Complete",
   },
   {
     id: 4,
@@ -41,6 +38,5 @@ export const projects = [
     tags: ["Html", "CSS", "Javascript", "Excel"],
     liveUrl: "https://ric-gaming-club-faq.vercel.app/pages/home/index.html",
     githubUrl: "https://github.com/henryIsHim/ric-gaming-club-faq.git",
-    status: "Complete",
   },
 ];

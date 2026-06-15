@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="group relative bg-white dark:bg-[#121212] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
       {/* Status Badge */}
-      {status && (
+      {/* {status && (
         <div className="absolute top-3 right-3 z-10">
           <span className={`px-2 py-1 text-xs font-medium rounded-full ${
             status === 'Complete' 
@@ -17,16 +17,16 @@ const ProjectCard = ({ project }) => {
             {status}
           </span>
         </div>
-      )}
+      )} */}
 
       {/* Project Image */}
-      <div className="relative h-40 sm:h-48 w-full">
+      <div className="relative h-80 sm:h-96 w-full">
         <Image
           src={image}
           alt={`${title} - Screenshot of project`}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 100vw"
           loading="lazy"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="

@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import ProjectCard from './components/projectCard';
+import LayeredProjects from './components/LayeredProjects';
+import SkillsShowcase from './components/SkillsShowcase';
 import { projects } from './data/projects';
 import Separator from './components/separator';
 import ContactForm from './components/contactForm';
@@ -10,7 +12,7 @@ export default function HomePage() {
   return (
     <main className="container mx-auto px-4 overflow-hidden bg-white dark:bg-[#0E0E1A] transition-colors duration-300">
       {/* Hero Section */}
-      <section id="about" className="flex flex-col md:flex-row items-center justify-between py-16 md:py-32 gap-8">
+      <section id="about" className="flex flex-col md:flex-row items-center justify-between py-12 md:py-20 gap-8">
         {/* Left side - Illustration/Profile */}
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <div className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
@@ -41,13 +43,13 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="text-gray-700 dark:text-[#CCCCCC] mb-4 max-w-xl">
-            Motivated and detail-oriented Bachelor's student majoring in Information and Communication Technology, with hands-on experience in front-end development. Skilled in building responsive web applications using Html, Tailwind CSS, Javascript and React.js, along with academic experience in data science, machine learning, and simulation modeling using Python. Enthusiastic about leveraging technology to solve problems and seeking an opportunity to contribute as a intern in a dynamic and innovative environment.
+            Passionate and motivated recent graduate with a strong interest in Software Engineering and emerging technologies. Gained practical industry experience through an internship, complemented by academic projects that strengthened technical, problem-solving, and teamwork skills. Eager to develop innovative solutions, expand technical expertise, and contribute to collaborative teams while growing as a software professional.
           </p>
           <div className="flex flex-col items-center md:items-start gap-4 mb-6">
             {/* Buttons Row */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
-                href="/PhyoThweThweKyaw (1).pdf"
+                href="/PhyoThweThweKyaw_Software_Engineer.pdf"
                 download
                 className="flex items-center gap-2 px-6 py-2 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300 font-semibold"
               >
@@ -71,7 +73,7 @@ export default function HomePage() {
                 href="https://github.com/Phyothwethwekyaw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300"
                 aria-label="GitHub"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -82,10 +84,10 @@ export default function HomePage() {
                 href="https://www.linkedin.com/in/phyothwethwekyaw/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                {/* <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
@@ -95,7 +97,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-300"
                 aria-label="Facebook"
-              >
+              > */}
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
@@ -104,7 +106,7 @@ export default function HomePage() {
                 href="https://line.me/ti/p/4av6NAHy2r"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-white hover:border-green-500 dark:hover:border-green-500 transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-white hover:border-green-500 dark:hover:border-green-500 transition-all duration-300"
                 aria-label="Line"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -136,7 +138,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-1">
                   Bachelor of Science in Information and Communication Technology
                 </h3>
-                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Jan 2023 - Present</p>
+                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Jan 2023 - Dec 2026</p>
                 <p className="text-amber-600 dark:text-[#FFD700] font-medium mb-2">Rangsit University</p>
                 <p className="text-gray-700 dark:text-[#CCCCCC] mb-1">
                   <span className="font-medium">CGPA:</span> 3.7
@@ -167,67 +169,74 @@ export default function HomePage() {
 
       <Separator />
 
+      {/* Experience Section */}
+      <section id="experience" className="py-8 md:py-16">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Experience</h2>
+        <div className="relative">
+          {/* Timeline Line */}
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
+
+          <div className="space-y-8">
+            {/* Sasin School of Management */}
+            <div className="relative flex items-start">
+              {/* Timeline Dot */}
+              <div className="absolute left-2 top-1 w-4 h-4 bg-amber-600 dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#0E0E1A]"></div>
+
+              {/* Content */}
+              <div className="ml-12">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-1">
+                  Software Developer Intern
+                </h3>
+                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Aug 2025 - Nov 2025 · 4 mos · On-site</p>
+                <p className="text-amber-600 dark:text-[#FFD700] font-medium mb-3">Sasin School of Management · Internship</p>
+                <p className="text-gray-700 dark:text-[#CCCCCC] mb-4">
+                  Developed a production-ready online learning platform using Next.js, React, and Tailwind CSS, built course management features with Strapi CMS, implemented Google OAuth and JWT authentication, and designed key user-facing experiences including the dashboard, sign-in flow, and course pages.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {['Next.js', 'React', 'Tailwind CSS', 'Strapi', 'Google OAuth', 'JWT', 'Framer Motion'].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-gray-200 dark:bg-[#2C2F48] text-blue-600 dark:text-[#FFD700] rounded-full text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Separator />
+
       {/* Skills Section */}
       <section id="skills" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Skills</h2>
-        <div className="space-y-6">
-          {/* Programming Languages */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Programming Languages</h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Python</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">JavaScript</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">HTML</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Tailwind CSS</span>
-            </div>
-          </div>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-amber-600 dark:text-[#FFD700] text-left">Skills</h2>
 
-          {/* Tools/Frameworks */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Tools/Frameworks</h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Rapid Miner</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Jupyter Notebook</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Google Colab</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Excel</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Pandas</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">NumPy</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Matplotlib</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Power BI</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">React.js</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">VS Code</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Chrome DevTools</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Git</span>
-            </div>
-          </div>
+        <SkillsShowcase />
 
-          {/* Databases */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Databases</h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">MySQL</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Google Sheets</span>
-            </div>
-          </div>
-
-          {/* Other Skills */}
-          <div>
+        {/* Other Skills & Languages */}
+        <div className="max-w-3xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-5 rounded-2xl bg-white dark:bg-[#121826] border border-gray-200 dark:border-[#2C2F48]">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Other Skills</h3>
             <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Problem Solving</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Team Collaboration</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Fast Learner</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Data Visualization & Reporting</span>
+              {['Problem Solving', 'Team Collaboration', 'Fast Learner', 'Data Visualization & Reporting'].map((s) => (
+                <span key={s} className="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-[#1A1F2E] text-sm text-gray-800 dark:text-[#F8F8F8] border border-gray-200 dark:border-[#2C2F48]">
+                  {s}
+                </span>
+              ))}
             </div>
           </div>
 
-          {/* Languages */}
-          <div>
+          <div className="p-5 rounded-2xl bg-white dark:bg-[#121826] border border-gray-200 dark:border-[#2C2F48]">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Languages</h3>
             <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Burmese (Fluent)</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Chinese (Conversational)</span>
-              <span className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-[#232736] text-gray-900 dark:text-[#F8F8F8] font-medium">Thai (Basic)</span>
+              {['Burmese (Fluent)', 'Chinese (Conversational)', 'Thai (Basic)'].map((l) => (
+                <span key={l} className="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-[#1A1F2E] text-sm text-gray-800 dark:text-[#F8F8F8] border border-gray-200 dark:border-[#2C2F48]">
+                  {l}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -235,7 +244,7 @@ export default function HomePage() {
       <Separator />
 
       {/* Certificates Section */}
-      <section id="certificates" className="py-8 md:py-16">
+      {/* <section id="certificates" className="py-8 md:py-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Certificates</h2>
         <div className="bg-gray-50 dark:bg-[#232736] rounded-lg p-6 border border-gray-200 dark:border-[#2C2F48]">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-2">
@@ -248,16 +257,12 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-      <Separator />
+      <Separator /> */}
 
       {/* Projects Section */}
       <section id="projects" className="py-8 md:py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-amber-600 dark:text-[#FFD700]">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <LayeredProjects projects={projects} />
       </section>
 
       <Separator />

@@ -7,11 +7,14 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
+  const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   // Handle scroll and section detection
   useEffect(() => {
     const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+
       const sections = document.querySelectorAll('section[id]');
       const scrollPosition = window.scrollY + window.innerHeight / 3; // Adjust viewport offset
 
@@ -51,8 +54,9 @@ const Navbar = () => {
   const navLinks = [
     { href: '#about', label: 'About' },
     { href: '#education', label: 'Education' },
+    { href: '#experience', label: 'Experience' },
     { href: '#skills', label: 'Skills' },
-    { href: '#certificates', label: 'Certificates' },
+    // { href: '#certificates', label: 'Certificates' },
     { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
@@ -77,8 +81,18 @@ const Navbar = () => {
   };
 
   return (
-  <header className="sticky top-0 z-50 bg-white/95 dark:bg-[#0E0E1A]/90 backdrop-blur-md border-b border-gray-200 dark:border-[#2C2F48] transition-colors duration-300">
-    <nav className="max-w-6xl mx-auto">
+  <header
+    className={`sticky z-50 transition-all duration-500 ease-out ${
+      isScrolled ? 'top-4 px-4' : 'top-0 px-0'
+    }`}
+  >
+    <nav
+      className={`mx-auto transition-all duration-500 ease-out ${
+        isScrolled
+          ? 'max-w-4xl rounded-full bg-white/70 dark:bg-[#0E0E1A]/60 backdrop-blur-[24px] backdrop-saturate-150 border border-white/40 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
+          : 'max-w-6xl border-gray-200 dark:border-[#2C2F48]'
+      }`} 
+    >
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="relative z-50 flex items-center gap-2">
@@ -127,7 +141,7 @@ const Navbar = () => {
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 border border-gray-300 dark:border-gray-600 transition-all duration-300"
+            className="p-2 hover:text-[#0E0E1A] dark:hover:text-[#FFD700] transition-all duration-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -143,7 +157,7 @@ const Navbar = () => {
           {/* Mobile Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 border border-gray-300 dark:border-gray-600 transition-all duration-300"
+            className="p-2 hover:text-[#0E0E1A] dark:hover:text-[#FFD700] transition-all duration-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -216,4 +230,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
