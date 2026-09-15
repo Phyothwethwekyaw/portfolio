@@ -46,7 +46,7 @@ export default function LayeredProjects({ projects }) {
   }, [projects.length]);
 
   return (
-    <div ref={containerRef} className="max-w-3xl mx-auto space-y-12">
+    <div ref={containerRef} className="w-full space-y-12">
       {projects.map((project) => (
         <div key={project.id} className="layered-card">
           <ProjectCard project={project} />

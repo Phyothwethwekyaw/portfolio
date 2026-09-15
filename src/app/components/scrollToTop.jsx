@@ -5,7 +5,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 // Use your palette: bg-[#9F8361], text-[#DCD7CD], hover:bg-[#56331D], hover:text-[#DCD7CD]
 const DEFAULT_BTN_CLS =
-  "fixed bottom-8 right-6 z-50 flex items-center justify-center rounded-full bg-[#2C2F48] text-[#FFD700] p-4 hover:bg-[#6F42C1] hover:text-[#F8F8F8] shadow-lg transition-all duration-300 ease-out";
+  "fixed bottom-8 right-6 z-50 flex items-center justify-center rounded-full bg-[#3a3a3c] text-[#f5f5f7] p-4 hover:bg-[#f5f5f7] hover:text-[#f5f5f7] shadow-lg transition-all duration-300 ease-out";
 const SCROLL_THRESHOLD = 50;
 
 const ScrollToTop = () => {

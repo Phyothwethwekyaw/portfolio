@@ -89,31 +89,31 @@ const Navbar = () => {
     <nav
       className={`mx-auto transition-all duration-500 ease-out ${
         isScrolled
-          ? 'max-w-4xl rounded-full bg-white/70 dark:bg-[#0E0E1A]/60 backdrop-blur-[24px] backdrop-saturate-150 border border-white/40 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
-          : 'max-w-6xl border-gray-200 dark:border-[#2C2F48]'
+          ? 'max-w-4xl rounded-full bg-white/70 dark:bg-[#1d1d1f]/60 backdrop-blur-[24px] backdrop-saturate-150 border border-white/40 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
+          : 'max-w-6xl border-[#d2d2d7] dark:border-[#3a3a3c]'
       }`} 
     >
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="relative z-50 flex items-center gap-2">
           {/* Flower SVG Logo */}
-          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 dark:bg-[#FFD700] shadow-md transition-colors duration-300">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#FFD700] dark:bg-[#FFD700] shadow-md transition-colors duration-300">
             <svg viewBox="0 0 32 32" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
               {/* Center circle */}
-              <circle cx="16" cy="16" r="5" fill="currentColor" className="text-white dark:text-[#0E0E1A]"/>
+              <circle cx="16" cy="16" r="5" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]"/>
               {/* Petals */}
-              <ellipse cx="16" cy="6" rx="3" ry="6" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.7"/>
-              <ellipse cx="16" cy="26" rx="3" ry="6" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.7"/>
-              <ellipse cx="6" cy="16" rx="6" ry="3" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.7"/>
-              <ellipse cx="26" cy="16" rx="6" ry="3" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.7"/>
-              <ellipse cx="8.5" cy="8.5" rx="2.5" ry="5" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.5" transform="rotate(-45 8.5 8.5)"/>
-              <ellipse cx="23.5" cy="8.5" rx="2.5" ry="5" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.5" transform="rotate(45 23.5 8.5)"/>
-              <ellipse cx="8.5" cy="23.5" rx="2.5" ry="5" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.5" transform="rotate(45 8.5 23.5)"/>
-              <ellipse cx="23.5" cy="23.5" rx="2.5" ry="5" fill="currentColor" className="text-white dark:text-[#0E0E1A]" opacity="0.5" transform="rotate(-45 23.5 23.5)"/>
+              <ellipse cx="16" cy="6" rx="3" ry="6" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.7"/>
+              <ellipse cx="16" cy="26" rx="3" ry="6" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.7"/>
+              <ellipse cx="6" cy="16" rx="6" ry="3" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.7"/>
+              <ellipse cx="26" cy="16" rx="6" ry="3" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.7"/>
+              <ellipse cx="8.5" cy="8.5" rx="2.5" ry="5" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.5" transform="rotate(-45 8.5 8.5)"/>
+              <ellipse cx="23.5" cy="8.5" rx="2.5" ry="5" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.5" transform="rotate(45 23.5 8.5)"/>
+              <ellipse cx="8.5" cy="23.5" rx="2.5" ry="5" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.5" transform="rotate(45 8.5 23.5)"/>
+              <ellipse cx="23.5" cy="23.5" rx="2.5" ry="5" fill="currentColor" className="text-[#1d1d1f] dark:text-[#1d1d1f]" opacity="0.5" transform="rotate(-45 23.5 23.5)"/>
             </svg>
           </span>
           <h1 className="text-2xl font-bold">
-            <span className="text-gray-900 dark:text-[#F8F8F8] transition-colors duration-300">Julie</span>
+            <span className="text-[#1d1d1f] dark:text-[#f5f5f7] transition-colors duration-300">Julie</span>
           </h1>
         </a>
         {/* Desktop Navigation */}
@@ -127,10 +127,10 @@ const Navbar = () => {
                   className={`py-2 font-medium transition-colors duration-300
                     ${
                       activeSection === link.href.slice(1)
-                        ? 'text-gray-900 dark:text-[#F8F8F8]'
-                        : 'text-gray-600 dark:text-[#CCCCCC]'
+                        ? 'text-[#1d1d1f] dark:text-[#f5f5f7]'
+                        : 'text-[#6e6e73] dark:text-[#a1a1a6]'
                     }
-                    hover:text-amber-600 dark:hover:text-[#FFD700]`}
+                    hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7]`}
                 >
                   {link.label}
                 </a>
@@ -141,7 +141,7 @@ const Navbar = () => {
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
-            className="p-2 hover:text-[#0E0E1A] dark:hover:text-[#FFD700] transition-all duration-300"
+            className="p-2 hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7] transition-all duration-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -157,7 +157,7 @@ const Navbar = () => {
           {/* Mobile Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 hover:text-[#0E0E1A] dark:hover:text-[#FFD700] transition-all duration-300"
+            className="p-2 hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7] transition-all duration-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -175,17 +175,17 @@ const Navbar = () => {
           >
             <div className="w-6 flex flex-col gap-1.5">
               <span
-                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#CCCCCC] transform transition-all duration-300 ${
+                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#a1a1a6] transform transition-all duration-300 ${
                   isOpen ? 'rotate-45 translate-y-2' : ''
                 }`}
               ></span>
               <span
-                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#CCCCCC] transition-all duration-300 ${
+                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#a1a1a6] transition-all duration-300 ${
                   isOpen ? 'opacity-0' : ''
                 }`}
               ></span>
               <span
-                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#CCCCCC] transform transition-all duration-300 ${
+                className={`block h-0.5 w-full bg-gray-600 dark:bg-[#a1a1a6] transform transition-all duration-300 ${
                   isOpen ? '-rotate-45 -translate-y-2' : ''
                 }`}
               ></span>
@@ -196,12 +196,12 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/40 dark:bg-[#4B0082]/40 z-40" onClick={() => setIsOpen(false)} />
+        <div className="fixed inset-0 bg-black/40 dark:bg-[#3a3a3c]/40 z-40" onClick={() => setIsOpen(false)} />
       )}
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-x-0 top-0 z-40 h-screen bg-white dark:bg-[#121212] transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-x-0 top-0 z-40 h-screen bg-white dark:bg-[#2c2c2e] transform transition-transform duration-300 ease-in-out md:hidden ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
@@ -214,10 +214,10 @@ const Navbar = () => {
               className={`text-2xl font-medium transition-colors duration-300
                 ${
                   activeSection === link.href.slice(1)
-                    ? 'text-gray-900 dark:text-[#F8F8F8]'
-                    : 'text-gray-600 dark:text-[#CCCCCC]'
+                    ? 'text-[#1d1d1f] dark:text-[#f5f5f7]'
+                    : 'text-[#6e6e73] dark:text-[#a1a1a6]'
                 }
-                hover:text-amber-600 dark:hover:text-[#FFD700]`}
+                hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7]`}
             >
               {link.label}
             </a>

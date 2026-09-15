@@ -1,26 +1,10 @@
 // src/app/layout.js
 
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import ScrollToTop from "./components/scrollToTop";
 import { ThemeProvider } from "./contexts/ThemeContext";
-
-// Load fonts with CSS variable support and optimization
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-  display: 'swap',
-  preload: true,
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-  display: 'swap',
-  preload: true,
-});
 
 export const viewport = {
   width: 'device-width',
@@ -102,7 +86,7 @@ export default function RootLayout({ children }) {
         
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#0E0E1A] text-gray-900 dark:text-[#CCCCCC] transition-colors duration-300`}
+        className="font-sans antialiased bg-white dark:bg-[#1d1d1f] text-[#1d1d1f] dark:text-[#a1a1a6] transition-colors duration-300"
       >
         <ThemeProvider>
           <div className="min-h-screen flex flex-col">

@@ -10,7 +10,7 @@ import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-b
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto px-4 overflow-hidden bg-white dark:bg-[#0E0E1A] transition-colors duration-300">
+    <main className="container mx-auto px-4 overflow-hidden bg-white dark:bg-[#1d1d1f] transition-colors duration-300">
       {/* Hero Section */}
       <section id="about" className="flex flex-col md:flex-row items-center justify-between py-12 md:py-20 gap-8">
         {/* Left side - Illustration/Profile */}
@@ -31,18 +31,15 @@ export default function HomePage() {
 
         {/* Right side - Text content */}
         <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
-          <p className="text-amber-600 dark:text-[#FFD700] mb-2 text-base md:text-lg">
-            Welcome to my Portfolio, my name is
-          </p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 text-gray-900 dark:text-[#F8F8F8] leading-tight">
-            <span className="block text-base sm:text-2xl md:text-3xl font-semibold text-gray-600 dark:text-[#AAAAAA] mb-1">Phyo Thwe Thwe Kyaw</span>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 text-[#1d1d1f] dark:text-[#f5f5f7] leading-tight">
+            <span className="block text-base sm:text-2xl md:text-3xl font-semibold text-[#6e6e73] dark:text-[#a1a1a6] mb-1">Phyo Thwe Thwe Kyaw</span>
             <span className="block">
-              <span className="text-gray-900 dark:text-[#F8F8F8]">Front</span>
-              <span className="text-blue-600 dark:text-[#6EC1E4]">end</span>
-              <span className="text-gray-900 dark:text-[#F8F8F8]"> Developer</span>
+              <span className="text-[#1d1d1f] dark:text-[#f5f5f7]">Front</span>
+              <span className="text-[#FFD700] dark:text-[#FFD700]">end</span>
+              <span className="text-[#1d1d1f] dark:text-[#f5f5f7]"> Developer</span>
             </span>
           </h1>
-          <p className="text-gray-700 dark:text-[#CCCCCC] mb-4 max-w-xl">
+          <p className="text-[#1d1d1f] dark:text-[#a1a1a6] mb-4 max-w-xl">
             Passionate and motivated recent graduate with a strong interest in Software Engineering and emerging technologies. Gained practical industry experience through an internship, complemented by academic projects that strengthened technical, problem-solving, and teamwork skills. Eager to develop innovative solutions, expand technical expertise, and contribute to collaborative teams while growing as a software professional.
           </p>
           <div className="flex flex-col items-center md:items-start gap-4 mb-6">
@@ -51,7 +48,7 @@ export default function HomePage() {
               <a
                 href="/PhyoThweThweKyaw_Software_Engineer.pdf"
                 download
-                className="flex items-center gap-2 px-6 py-2 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300 font-semibold"
+                className="flex items-center gap-2 px-6 py-2 rounded-lg border border-[#d2d2d7] dark:border-[#3a3a3c] bg-transparent text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#f5f5f7] dark:hover:bg-[#3a3a3c] hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7] transition-all duration-300 font-semibold"
               >
                 Download CV
                 {/* Download Icon */}
@@ -61,7 +58,7 @@ export default function HomePage() {
               </a>
               <InteractiveHoverButton
                 onClick={() => window.location.href = 'mailto:phyothwethwekyaw404@gmail.com'}
-                className="bg-gray-200 dark:bg-[#232736] border-gray-300 dark:border-[#2C2F48] text-gray-900 dark:text-[#F8F8F8] hover:bg-amber-500 dark:hover:bg-[#FFD700] hover:text-white dark:hover:text-[#0E0E1A] hover:border-amber-500 dark:hover:border-[#FFD700]"
+                className="bg-[#f5f5f7] dark:bg-[#2c2c2e] border-[#d2d2d7] dark:border-[#3a3a3c] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#1d1d1f] dark:hover:bg-[#f5f5f7] hover:text-white dark:hover:text-[#1d1d1f] hover:border-[#1d1d1f] dark:hover:border-[#f5f5f7]"
               >
                 Hire Me
               </InteractiveHoverButton>
@@ -73,7 +70,7 @@ export default function HomePage() {
                 href="https://github.com/Phyothwethwekyaw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-gray-200 dark:hover:bg-[#2C2F48] hover:text-amber-600 dark:hover:text-[#FFD700] transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#3a3a3c] bg-transparent text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#f5f5f7] dark:hover:bg-[#3a3a3c] hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7] transition-all duration-300"
                 aria-label="GitHub"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -84,29 +81,18 @@ export default function HomePage() {
                 href="https://www.linkedin.com/in/phyothwethwekyaw/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#3a3a3c] bg-transparent text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#1d1d1f] dark:hover:bg-[#1d1d1f] hover:text-white dark:hover:text-white hover:border-[#1d1d1f] dark:hover:border-[#1d1d1f] transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                {/* <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a
-                href="https://www.facebook.com/jully.yan.9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white hover:border-blue-600 dark:hover:border-blue-600 transition-all duration-300"
-                aria-label="Facebook"
-              > */}
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
               <a
                 href="https://line.me/ti/p/4av6NAHy2r"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#2C2F48] bg-transparent text-gray-900 dark:text-[#F8F8F8] hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-white hover:border-green-500 dark:hover:border-green-500 transition-all duration-300"
+                className="inline-flex items-center justify-center w-10 h-10 dark:border-[#3a3a3c] bg-transparent text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-white hover:border-green-500 dark:hover:border-green-500 transition-all duration-300"
                 aria-label="Line"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -122,7 +108,7 @@ export default function HomePage() {
 
       {/* Education Section */}
       <section id="education" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Education</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#1d1d1f] dark:text-[#f5f5f7] text-left">Education</h2>
         <div className="relative">
           {/* Timeline Line */}
           <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
@@ -131,19 +117,19 @@ export default function HomePage() {
             {/* Rangsit University */}
             <div className="relative flex items-start">
               {/* Timeline Dot */}
-              <div className="absolute left-2 top-1 w-4 h-4 bg-amber-600 dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#0E0E1A]"></div>
+              <div className="absolute left-2 top-0 w-4 h-4 bg-[#FFD700] dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#1d1d1f]"></div>
               
               {/* Content */}
               <div className="ml-12">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-1">
+                <h3 className="text-xl font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-1">
                   Bachelor of Science in Information and Communication Technology
                 </h3>
-                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Jan 2023 - Dec 2026</p>
-                <p className="text-amber-600 dark:text-[#FFD700] font-medium mb-2">Rangsit University</p>
-                <p className="text-gray-700 dark:text-[#CCCCCC] mb-1">
+                <p className="text-[#6e6e73] dark:text-[#a1a1a6] text-sm mb-2">Jan 2023 - Dec 2026</p>
+                <p className="text-[#1d1d1f] dark:text-[#f5f5f7] font-medium mb-2">Rangsit University</p>
+                <p className="text-[#1d1d1f] dark:text-[#a1a1a6] mb-1">
                   <span className="font-medium">CGPA:</span> 3.7
                 </p>
-                <p className="text-gray-700 dark:text-[#CCCCCC]">
+                <p className="text-[#1d1d1f] dark:text-[#a1a1a6]">
                   <span className="font-medium">Relevant Courses:</span> Data Structures, Web Development, Databases, Data Science, Data Mining, Machine Learning
                 </p>
               </div>
@@ -152,15 +138,15 @@ export default function HomePage() {
             {/* University of Computer Studies */}
             <div className="relative flex items-start">
               {/* Timeline Dot */}
-              <div className="absolute left-2 top-1 w-4 h-4 bg-amber-600 dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#0E0E1A]"></div>
+              <div className="absolute left-2 top-0 w-4 h-4 bg-[#FFD700] dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#1d1d1f]"></div>
               
               {/* Content */}
               <div className="ml-12">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-1">
+                <h3 className="text-xl font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-1">
                   Bachelor of Science in Computer Science
                 </h3>
-                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Dec 2018 - Mar 2020</p>
-                <p className="text-amber-600 dark:text-[#FFD700] font-medium">University of Computer Studies, Taunggyi</p>
+                <p className="text-[#6e6e73] dark:text-[#a1a1a6] text-sm mb-2">Dec 2018 - Mar 2020</p>
+                <p className="text-[#1d1d1f] dark:text-[#f5f5f7] font-medium">University of Computer Studies, Taunggyi</p>
               </div>
             </div>
           </div>
@@ -171,7 +157,7 @@ export default function HomePage() {
 
       {/* Experience Section */}
       <section id="experience" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Experience</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#1d1d1f] dark:text-[#f5f5f7] text-left">Experience</h2>
         <div className="relative">
           {/* Timeline Line */}
           <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
@@ -180,23 +166,23 @@ export default function HomePage() {
             {/* Sasin School of Management */}
             <div className="relative flex items-start">
               {/* Timeline Dot */}
-              <div className="absolute left-2 top-1 w-4 h-4 bg-amber-600 dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#0E0E1A]"></div>
+              <div className="absolute left-2 top-0 w-4 h-4 bg-[#FFD700] dark:bg-[#FFD700] rounded-full border-4 border-white dark:border-[#1d1d1f]"></div>
 
               {/* Content */}
               <div className="ml-12">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-1">
+                <h3 className="text-xl font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-1">
                   Software Developer Intern
                 </h3>
-                <p className="text-gray-600 dark:text-[#AAAAAA] text-sm mb-2">Aug 2025 - Nov 2025 · 4 mos · On-site</p>
-                <p className="text-amber-600 dark:text-[#FFD700] font-medium mb-3">Sasin School of Management · Internship</p>
-                <p className="text-gray-700 dark:text-[#CCCCCC] mb-4">
+                <p className="text-[#6e6e73] dark:text-[#a1a1a6] text-sm mb-2">Aug 2025 - Nov 2025 · 4 mos · On-site</p>
+                <p className="text-[#1d1d1f] dark:text-[#f5f5f7] font-medium mb-3">Sasin School of Management · Internship</p>
+                <p className="text-[#1d1d1f] dark:text-[#a1a1a6] mb-4">
                   Developed a production-ready online learning platform using Next.js, React, and Tailwind CSS, built course management features with Strapi CMS, implemented Google OAuth and JWT authentication, and designed key user-facing experiences including the dashboard, sign-in flow, and course pages.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {['Next.js', 'React', 'Tailwind CSS', 'Strapi', 'Google OAuth', 'JWT', 'Framer Motion'].map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-gray-200 dark:bg-[#2C2F48] text-blue-600 dark:text-[#FFD700] rounded-full text-xs font-medium"
+                      className="px-3 py-1 bg-[#f5f5f7] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] border border-[#d2d2d7] dark:border-[#3a3a3c] rounded-full text-xs font-medium"
                     >
                       {tech}
                     </span>
@@ -212,46 +198,46 @@ export default function HomePage() {
 
       {/* Skills Section */}
       <section id="skills" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-amber-600 dark:text-[#FFD700] text-left">Skills</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-[#1d1d1f] dark:text-[#f5f5f7] text-left">Tech Stack</h2>
 
         <SkillsShowcase />
 
         {/* Other Skills & Languages */}
-        <div className="max-w-3xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-5 rounded-2xl bg-white dark:bg-[#121826] border border-gray-200 dark:border-[#2C2F48]">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Other Skills</h3>
+        {/* <div className="max-w-3xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-5 rounded-2xl bg-white dark:bg-[#2c2c2e] border border-[#d2d2d7] dark:border-[#3a3a3c]">
+            <h3 className="text-lg font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-3">Other Skills</h3>
             <div className="flex flex-wrap gap-2">
               {['Problem Solving', 'Team Collaboration', 'Fast Learner', 'Data Visualization & Reporting'].map((s) => (
-                <span key={s} className="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-[#1A1F2E] text-sm text-gray-800 dark:text-[#F8F8F8] border border-gray-200 dark:border-[#2C2F48]">
+                <span key={s} className="px-3 py-1.5 rounded-full bg-[#f5f5f7] dark:bg-[#2c2c2e] text-sm text-[#1d1d1f] dark:text-[#f5f5f7] border border-[#d2d2d7] dark:border-[#3a3a3c]">
                   {s}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white dark:bg-[#121826] border border-gray-200 dark:border-[#2C2F48]">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-[#F8F8F8] mb-3">Languages</h3>
+          <div className="p-5 rounded-2xl bg-white dark:bg-[#2c2c2e] border border-[#d2d2d7] dark:border-[#3a3a3c]">
+            <h3 className="text-lg font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-3">Languages</h3>
             <div className="flex flex-wrap gap-2">
               {['Burmese (Fluent)', 'Chinese (Conversational)', 'Thai (Basic)'].map((l) => (
-                <span key={l} className="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-[#1A1F2E] text-sm text-gray-800 dark:text-[#F8F8F8] border border-gray-200 dark:border-[#2C2F48]">
+                <span key={l} className="px-3 py-1.5 rounded-full bg-[#f5f5f7] dark:bg-[#2c2c2e] text-sm text-[#1d1d1f] dark:text-[#f5f5f7] border border-[#d2d2d7] dark:border-[#3a3a3c]">
                   {l}
                 </span>
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <Separator />
 
       {/* Certificates Section */}
       {/* <section id="certificates" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-amber-600 dark:text-[#FFD700] text-left">Certificates</h2>
-        <div className="bg-gray-50 dark:bg-[#232736] rounded-lg p-6 border border-gray-200 dark:border-[#2C2F48]">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-[#F8F8F8] mb-2">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#1d1d1f] dark:text-[#f5f5f7] text-left">Certificates</h2>
+        <div className="bg-[#f5f5f7] dark:bg-[#2c2c2e] rounded-lg p-6 border border-[#d2d2d7] dark:border-[#3a3a3c]">
+          <h3 className="text-xl font-semibold text-[#1d1d1f] dark:text-[#f5f5f7] mb-2">
             ASEAN Data Science Explorers 2023
           </h3>
-          <p className="text-amber-600 dark:text-[#FFD700] font-medium mb-3">SAP Analytics Cloud Training</p>
-          <p className="text-gray-700 dark:text-[#CCCCCC]">
+          <p className="text-[#1d1d1f] dark:text-[#f5f5f7] font-medium mb-3">SAP Analytics Cloud Training</p>
+          <p className="text-[#1d1d1f] dark:text-[#a1a1a6]">
             Attended the online Enablement Session focused on SAP Analytics Cloud. 
             Gained foundational knowledge in data analytics and cloud-based visualization concepts.
           </p>
@@ -261,26 +247,43 @@ export default function HomePage() {
 
       {/* Projects Section */}
       <section id="projects" className="py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-amber-600 dark:text-[#FFD700]">Featured Projects</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#1d1d1f] dark:text-[#f5f5f7]">Featured Projects</h2>
         <LayeredProjects projects={projects} />
       </section>
 
       <Separator />
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-3xl mx-auto px-4 py-8 md:py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 text-amber-600 dark:text-[#FFD700]">Let's Connect</h2>
-        <p className="text-center text-gray-700 dark:text-[#CCCCCC] mb-8 md:mb-12 max-w-md mx-auto px-4">
-          Feel free to reach out for collaborations or just a friendly hello
-        </p>
-        
-        {/* Contact Form */}
-        <ContactForm />
-        
-        <div className="mt-16 text-center">
-          <p className="text-gray-700 dark:text-[#CCCCCC] text-lg">Based in Thailand 🇹🇭</p>
-          <p className="text-sm text-gray-600 dark:text-[#AAAAAA] mt-2">Frontend Developer available for remote work opportunities worldwide</p>
-          <p className="text-xs text-gray-500 dark:text-[#888888] mt-1">Specializing in React, Next.js, and modern web development</p>
+      <section id="contact" className="max-w-6xl mx-auto px-4 py-8 md:py-16">
+        <div className="rounded-3xl border border-[#d2d2d7] dark:border-[#3a3a3c] bg-[#f5f5f7] dark:bg-[#2c2c2e] p-8 md:p-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+            {/* Left — copy */}
+            <div>
+              <span className="inline-block px-4 py-1.5 rounded-full border border-[#d2d2d7] dark:border-[#3a3a3c] text-xs font-medium text-[#1d1d1f] dark:text-[#f5f5f7] mb-6">
+                Contact
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] dark:text-[#f5f5f7] mb-4 leading-tight">
+                Get in touch<br />with me!
+              </h2>
+              <p className="text-sm text-[#6e6e73] dark:text-[#a1a1a6] max-w-sm mb-8">
+                Have questions or ideas? I'd love to hear from you. Reach out anytime and let's connect.
+              </p>
+              <a
+                href="mailto:phyothwethwekyaw404@gmail.com"
+                className="inline-block px-6 py-2.5 rounded-full bg-[#1d1d1f] dark:bg-[#f5f5f7] text-white dark:text-[#1d1d1f] font-semibold text-sm hover:opacity-90 transition-opacity"
+              >
+                Contact Me
+              </a>
+            </div>
+
+            {/* Right — form */}
+            <div>
+              <h3 className="text-2xl font-bold text-[#1d1d1f] dark:text-[#f5f5f7] mb-6">
+                Contact Me
+              </h3>
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </section>
     </main>

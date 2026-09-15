@@ -8,9 +8,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"SF Pro Display"',
+          '"SF Pro Text"',
+          '"Helvetica Neue"',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+        ],
+      },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         "slide-down": "slideDown 0.5s ease-in-out",
+        marquee: "marquee 40s linear infinite",
       },
       keyframes: {
         fadeIn: {
@@ -28,6 +41,10 @@ module.exports = {
           "100%": {
             transform: "translateY(0)",
           },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       borderRadius: {

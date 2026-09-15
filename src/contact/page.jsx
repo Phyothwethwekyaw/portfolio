@@ -45,14 +45,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-[60vh] flex items-center justify-center bg-[#0E0E1A] py-12 px-4">
+    <div className="min-h-[60vh] flex items-center justify-center bg-[#1d1d1f] py-12 px-4">
       <form
         onSubmit={handleSubmit}
-        className="bg-[#232736] rounded-xl shadow-md max-w-md w-full p-8 flex flex-col gap-6 border border-[#2C2F48]"
+        className="bg-[#2c2c2e] rounded-xl shadow-md max-w-md w-full p-8 flex flex-col gap-6 border border-[#3a3a3c]"
       >
         <div className="mb-2 text-center">
-          <h2 className="text-2xl font-bold text-[#FFD700] mb-1">Contact Me</h2>
-          <p className="text-[#CCCCCC] text-sm">I'd love to hear from you! Fill out the form below and I'll get back to you soon.</p>
+          <h2 className="text-2xl font-bold text-[#f5f5f7] mb-1">Contact Me</h2>
+          <p className="text-[#a1a1a6] text-sm">I'd love to hear from you! Fill out the form below and I'll get back to you soon.</p>
         </div>
 
         {status === 'success' && (
@@ -72,7 +72,7 @@ export default function Contact() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Name"
-          className="w-full px-4 py-2 rounded-lg border border-[#2C2F48] bg-transparent text-[#F8F8F8] focus:border-[#FFD700] focus:outline-none transition-colors"
+          className="w-full px-4 py-2 rounded-lg border border-[#3a3a3c] bg-transparent text-[#f5f5f7] focus:border-[#f5f5f7] focus:outline-none transition-colors"
           required
         />
         <input
@@ -81,7 +81,7 @@ export default function Contact() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          className="w-full px-4 py-2 rounded-lg border border-[#2C2F48] bg-transparent text-[#F8F8F8] focus:border-[#FFD700] focus:outline-none transition-colors"
+          className="w-full px-4 py-2 rounded-lg border border-[#3a3a3c] bg-transparent text-[#f5f5f7] focus:border-[#f5f5f7] focus:outline-none transition-colors"
           required
         />
         <textarea
@@ -90,7 +90,7 @@ export default function Contact() {
           onChange={handleChange}
           placeholder="Your Message"
           rows={5}
-          className="w-full px-4 py-2 rounded-lg border border-[#2C2F48] bg-transparent text-[#F8F8F8] focus:border-[#FFD700] focus:outline-none transition-colors resize-none"
+          className="w-full px-4 py-2 rounded-lg border border-[#3a3a3c] bg-transparent text-[#f5f5f7] focus:border-[#f5f5f7] focus:outline-none transition-colors resize-none"
           required
         />
         <button
@@ -98,8 +98,8 @@ export default function Contact() {
           disabled={isSubmitting}
           className={`w-full font-bold py-2 rounded-lg transition-colors ${
             isSubmitting
-              ? 'bg-gray-400 text-gray-700 cursor-not-allowed'
-              : 'bg-[#FFD700] text-[#0E0E1A] hover:bg-[#6F42C1] hover:text-[#F8F8F8]'
+              ? 'bg-gray-400 text-[#1d1d1f] cursor-not-allowed'
+              : 'bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#f5f5f7] hover:text-[#f5f5f7]'
           }`}
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
