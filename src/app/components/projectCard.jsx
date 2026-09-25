@@ -20,12 +20,12 @@ const ProjectCard = ({ project }) => {
       )} */}
 
       {/* Project Image */}
-      <div className="relative h-[28rem] sm:h-[36rem] w-full">
+      <div className="relative h-52 sm:h-[36rem] w-full">
         <Image
           src={image}
           alt={`${title} - Screenshot of project`}
           fill
-          className="object-cover"
+          className="object-fill sm:object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 100vw"
           loading="lazy"
           placeholder="blur"
